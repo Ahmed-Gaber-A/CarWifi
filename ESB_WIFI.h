@@ -1,17 +1,34 @@
-/*
- * ESB_WIFI.h
+
+/***********************************************
+ *  Module:ESB_WIFI
  *
- * Created: 9/29/2019 5:24:31 PM
- *  Author: Bobpo
- */ 
-
-
+ *  File Name:ESB_WIFI.H
+ *
+ *  Description: ESB WIFI declarations and function prototypes
+ *
+ *  Created on : 29/9/2019
+ *
+ *  Author: Ahmed Ekram&Ahmed Gaber
+ ***********************************************/
 #ifndef ESB_WIFI_H_
 #define ESB_WIFI_H_
-
+/************************************************************************
+*			             Included Libraries                              *
+************************************************************************/
 #include "uart_driver.h"
 #include <util/delay.h>
-//#define F_CPU 8000000 ULL
+
+/**************************************************************************
+ * Function Name : ESP_WIFI_Init
+ *
+ * Description	 : Operate AT Commands and setting SSID and pw to it
+ *
+ * INPUTS		 : void
+ *
+ * OUTPUTS 		 : void
+ *
+ * Return		 : void
+ **************************************************************************/
 extern void ESP_WIFI_Init(void);
 
 

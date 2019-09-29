@@ -1,13 +1,30 @@
-/*
- * ESP_WIFI.c
+/***********************************************
+ *  Module:ESB_WIFI
  *
- * Created: 9/29/2019 6:24:04 PM
- *  Author: Bobpo
- */ 
-
+ *  File Name:ESB_WIFI.c
+ *
+ *  Description: ESB WIFI  function implementation
+ *
+ *  Created on : 29/9/2019
+ *
+ *  Author: Ahmed Ekram&Ahmed Gaber
+ ***********************************************/
+/************************************************************************
+*			             Included Libraries                              *
+************************************************************************/
 #include "ESB_WIFI.h"
-//#define F_CPU 8000000 ULL
 
+/**************************************************************************
+ * Function Name : ESP_WIFI_Init
+ *
+ * Description	 : Operate AT Commands and setting SSID and pw to it
+ *
+ * INPUTS		 : void
+ *
+ * OUTPUTS 		 : void
+ *
+ * Return		 : void
+ **************************************************************************/
 void ESP_WIFI_Init(void)
 {
 	UART_Write_String("AT+CWMODE=2");

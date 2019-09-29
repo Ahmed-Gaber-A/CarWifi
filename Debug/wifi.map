@@ -279,7 +279,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x800
+.text           0x00000000      0x7f0
  *(.vectors)
  .vectors       0x00000000       0x54 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -372,62 +372,62 @@ END GROUP
  .text.CallBack_Function
                 0x00000340        0x6 main.o
                 0x00000340                CallBack_Function
- .text.main     0x00000346       0xc4 main.o
+ .text.main     0x00000346       0xb4 main.o
                 0x00000346                main
  .text.motor_init
-                0x0000040a       0x22 motor.o
-                0x0000040a                motor_init
+                0x000003fa       0x22 motor.o
+                0x000003fa                motor_init
  .text.motor_forward
-                0x0000042c       0x22 motor.o
-                0x0000042c                motor_forward
+                0x0000041c       0x22 motor.o
+                0x0000041c                motor_forward
  .text.motor_backward
-                0x0000044e       0x22 motor.o
-                0x0000044e                motor_backward
+                0x0000043e       0x22 motor.o
+                0x0000043e                motor_backward
  .text.motor_right
-                0x00000470       0x22 motor.o
-                0x00000470                motor_right
+                0x00000460       0x22 motor.o
+                0x00000460                motor_right
  .text.motor_left
-                0x00000492       0x22 motor.o
-                0x00000492                motor_left
+                0x00000482       0x22 motor.o
+                0x00000482                motor_left
  .text.motor_stop
-                0x000004b4       0x22 motor.o
-                0x000004b4                motor_stop
+                0x000004a4       0x22 motor.o
+                0x000004a4                motor_stop
  .text.pwm_init
-                0x000004d6       0x2c PWM.o
-                0x000004d6                pwm_init
+                0x000004c6       0x2c PWM.o
+                0x000004c6                pwm_init
  .text.pwm_write
-                0x00000502       0x1e PWM.o
-                0x00000502                pwm_write
+                0x000004f2       0x1e PWM.o
+                0x000004f2                pwm_write
  .text.timer0_init
-                0x00000520      0x172 Timer.o
-                0x00000520                timer0_init
+                0x00000510      0x172 Timer.o
+                0x00000510                timer0_init
  .text.UART_Init
-                0x00000692       0x60 uart_driver.o
-                0x00000692                UART_Init
+                0x00000682       0x60 uart_driver.o
+                0x00000682                UART_Init
  .text.UART_Write_Byte
-                0x000006f2        0x8 uart_driver.o
-                0x000006f2                UART_Write_Byte
+                0x000006e2        0x8 uart_driver.o
+                0x000006e2                UART_Write_Byte
  .text.UART_Write_String
-                0x000006fa       0x1e uart_driver.o
-                0x000006fa                UART_Write_String
+                0x000006ea       0x1e uart_driver.o
+                0x000006ea                UART_Write_String
  .text.__vector_13
-                0x00000718       0x50 uart_driver.o
-                0x00000718                __vector_13
+                0x00000708       0x50 uart_driver.o
+                0x00000708                __vector_13
  .text.libgcc.div
-                0x00000768       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x00000768                _div
-                0x00000768                __divmodhi4
+                0x00000758       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00000758                _div
+                0x00000758                __divmodhi4
  .text.libgcc.div
-                0x00000790       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00000790                __udivmodsi4
+                0x00000780       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000780                __udivmodsi4
  .text.libgcc.div
-                0x000007d4       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x000007d4                __udivmodhi4
-                0x000007fc                . = ALIGN (0x2)
+                0x000007c4       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000007c4                __udivmodhi4
+                0x000007ec                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000007fc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000007fc                _exit
-                0x000007fc                exit
+ .fini9         0x000007ec        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000007ec                _exit
+                0x000007ec                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -446,11 +446,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000007fc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000007ec        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000800                _etext = .
+                0x000007f0                _etext = .
 
-.data           0x00800060       0x54 load address 0x00000800
+.data           0x00800060       0x54 load address 0x000007f0
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -479,8 +479,8 @@ END GROUP
  COMMON         0x008000b6        0x1 main.o
                 0x008000b6                Reading_g
                 0x008000b7                PROVIDE (__bss_end, .)
-                0x00000800                __data_load_start = LOADADDR (.data)
-                0x00000854                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000007f0                __data_load_start = LOADADDR (.data)
+                0x00000844                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008000b7        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -580,17 +580,17 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x13d7
+.debug_info     0x00000000     0x13a7
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6      0x118 DIO.o
  .debug_info    0x000005fe      0x2ca ESP_WIFI.o
- .debug_info    0x000008c8      0x349 main.o
- .debug_info    0x00000c11      0x340 motor.o
- .debug_info    0x00000f51       0xda PWM.o
- .debug_info    0x0000102b      0x129 Timer.o
- .debug_info    0x00001154       0xc3 Timer_cnfg.o
- .debug_info    0x00001217      0x1c0 uart_driver.o
+ .debug_info    0x000008c8      0x319 main.o
+ .debug_info    0x00000be1      0x340 motor.o
+ .debug_info    0x00000f21       0xda PWM.o
+ .debug_info    0x00000ffb      0x129 Timer.o
+ .debug_info    0x00001124       0xc3 Timer_cnfg.o
+ .debug_info    0x000011e7      0x1c0 uart_driver.o
 
 .debug_abbrev   0x00000000      0xa4b
  *(.debug_abbrev)
@@ -604,17 +604,17 @@ END GROUP
  .debug_abbrev  0x000008c3       0x71 Timer_cnfg.o
  .debug_abbrev  0x00000934      0x117 uart_driver.o
 
-.debug_line     0x00000000      0xb2d
+.debug_line     0x00000000      0xb21
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x115 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_line    0x00000115      0x164 DIO.o
  .debug_line    0x00000279      0x18b ESP_WIFI.o
- .debug_line    0x00000404      0x1a1 main.o
- .debug_line    0x000005a5      0x121 motor.o
- .debug_line    0x000006c6       0x91 PWM.o
- .debug_line    0x00000757      0x1e6 Timer.o
- .debug_line    0x0000093d       0x49 Timer_cnfg.o
- .debug_line    0x00000986      0x1a7 uart_driver.o
+ .debug_line    0x00000404      0x195 main.o
+ .debug_line    0x00000599      0x121 motor.o
+ .debug_line    0x000006ba       0x91 PWM.o
+ .debug_line    0x0000074b      0x1e6 Timer.o
+ .debug_line    0x00000931       0x49 Timer_cnfg.o
+ .debug_line    0x0000097a      0x1a7 uart_driver.o
 
 .debug_frame    0x00000000      0x26c
  *(.debug_frame)
